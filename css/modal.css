@@ -206,7 +206,6 @@
   border: none;
   fill: #f4f4fd;
 }
-/* 1. Ховаємо стандартну галочку браузера */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -220,7 +219,6 @@
   overflow: hidden;
 }
 
-/* 2. Малюємо порожній квадратик */
 .custom-checkbox {
   width: 16px;
   height: 16px;
@@ -233,11 +231,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: transparent; /* Іконка всередині прозора */
+  fill: transparent;
   margin-right: 8px;
 }
 
-/* 3. Коли натискаємо на чекбокс — квадрат фарбується, а галочка стає білою */
 .modal-checkbox:checked + .check-text .custom-checkbox {
   background-color: #404bbf;
   border: none;
@@ -255,12 +252,10 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* Обгортка робить позиціонування відносним */
 .modal-input-wrap {
   position: relative;
 }
 
-/* Відступ зліва всередині інпута, щоб текст не налізав на іконку */
 .modal-input {
   width: 100%;
   height: 40px;
@@ -272,7 +267,6 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Іконка позиціонується абсолютно всередині блоку .modal-input-wrap */
 .modal-icon {
   position: absolute;
   left: 16px;
@@ -282,7 +276,6 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Зміна кольору рамки та іконки при фокусі */
 .modal-input:focus {
   border-color: #4d5ae5;
 }
