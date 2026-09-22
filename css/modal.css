@@ -44,7 +44,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 72px 24px 24px 24px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -78,8 +78,9 @@
 .modal-close-btn:focus .modal-close-icon {
   fill: #ffffff;
 }
-.modal-comment-field {
-  margin-bottom: 16px;
+
+.modal-field {
+  margin-bottom: 8px;
 }
 
 .modal-title {
@@ -91,8 +92,8 @@
   color: #2e2f42;
   margin-bottom: 16px;
 }
-.modal-field {
-  margin-bottom: 8px;
+.modal-comment-field {
+  margin-bottom: 16px;
 }
 
 .modal-label {
